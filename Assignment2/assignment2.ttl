@@ -1,0 +1,355 @@
+@prefix : <http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#> .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assignedHoursFor
+:assignedHoursFor rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty ;
+                  rdfs:domain :CourseInstance ;
+                  rdfs:range :assignedHours ,
+                             :reportedHours .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#at
+:at rdf:type owl:ObjectProperty ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    rdfs:domain :Teacher ;
+    rdfs:range :assignedHours ,
+               :reportedHours .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#directorOf
+:directorOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :SeniorTeacher ;
+            rdfs:range :Program .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#enrolledIn
+:enrolledIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Student ;
+            rdfs:range :Course .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#examinerOf
+:examinerOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :SeniorTeacher ;
+            rdfs:range :CourseInstance .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#hasSupervisor
+:hasSupervisor rdf:type owl:ObjectProperty ;
+               rdfs:domain :Postgraduate ;
+               rdfs:range :Teacher .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#instanceOf
+:instanceOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Course ;
+            rdfs:range :CourseInstance .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#ownedBy
+:ownedBy rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty ;
+         rdfs:domain :Course ;
+         rdfs:range :Program .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#planningFor
+:planningFor rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :CourseInstance ;
+             rdfs:range :CoursePlanning .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#programCourse
+:programCourse rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Course ;
+               rdfs:range :Program .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#registrationFor
+:registrationFor rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Student ;
+                 rdfs:range :CourseInstance .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#academicYear
+:academicYear rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :CourseInstance ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :programCourse ;
+                            owl:someValuesFrom :Course
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :programCourse ;
+                            owl:someValuesFrom :Program
+                          ] ;
+              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assistantHours
+:assistantHours rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :hours ;
+                rdfs:domain :CoursePlanning .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#courseCode
+:courseCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Course ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#courseName
+:courseName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Course ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#courseType
+:courseType rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain [ rdf:type owl:Restriction ;
+                          owl:onProperty :programCourse ;
+                          owl:someValuesFrom :Course
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :programCourse ;
+                          owl:someValuesFrom :Program
+                        ] ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#credits
+:credits rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:domain :Course ;
+         rdfs:range xsd:float .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#department
+:department rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Course ,
+                        :Program ,
+                        :Teacher ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#division
+:division rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Course ,
+                      :Teacher .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#enrolledYear
+:enrolledYear rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:domain :Student ;
+              rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#grade
+:grade rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain [ rdf:type owl:Restriction ;
+                     owl:onProperty :registrationFor ;
+                     owl:someValuesFrom :CourseInstance
+                   ] ,
+                   [ rdf:type owl:Restriction ;
+                     owl:onProperty :registrationFor ;
+                     owl:someValuesFrom :Student
+                   ] ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#hours
+:hours rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :assignedHours ,
+                   :reportedHours ;
+       rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#instanceID
+:instanceID rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :CourseInstance ;
+            rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#level
+:level rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Course ;
+       rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:subPropertyOf owl:topDataProperty ;
+      rdfs:domain :Person ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#personalID
+:personalID rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#planningNumStudents
+:planningNumStudents rdf:type owl:DatatypeProperty ;
+                     rdfs:subPropertyOf owl:topDataProperty ;
+                     rdfs:domain :CoursePlanning ;
+                     rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#programCode
+:programCode rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Program ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#programName
+:programName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Program ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#projectName
+:projectName rdf:type owl:DatatypeProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#seniorHours
+:seniorHours rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf :hours ;
+             rdfs:domain :CoursePlanning .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#status
+:status rdf:type owl:DatatypeProperty ;
+        rdfs:subPropertyOf owl:topDataProperty ;
+        rdfs:domain [ rdf:type owl:Restriction ;
+                      owl:onProperty :registrationFor ;
+                      owl:someValuesFrom :CourseInstance
+                    ] ,
+                    [ rdf:type owl:Restriction ;
+                      owl:onProperty :registrationFor ;
+                      owl:someValuesFrom :Student
+                    ] ;
+        rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#studyPeriod
+:studyPeriod rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :CourseInstance ;
+             rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#studyYear
+:studyYear rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain [ rdf:type owl:Restriction ;
+                         owl:onProperty :programCourse ;
+                         owl:someValuesFrom :Course
+                       ] ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :programCourse ;
+                         owl:someValuesFrom :Program
+                       ] ;
+           rdfs:range xsd:int .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Course
+:Course rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#CourseInstance
+:CourseInstance rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#CoursePlanning
+:CoursePlanning rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Postgraduate
+:Postgraduate rdf:type owl:Class ;
+              rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Program
+:Program rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#SeniorTeacher
+:SeniorTeacher rdf:type owl:Class ;
+               rdfs:subClassOf :Teacher .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Student
+:Student rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Teacher
+:Teacher rdf:type owl:Class ;
+         rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#TeachingAssistant
+:TeachingAssistant rdf:type owl:Class ;
+                   rdfs:subClassOf :Student ,
+                                   :Teacher .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Undergraduate
+:Undergraduate rdf:type owl:Class ;
+               rdfs:subClassOf :Student .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assignedHours
+:assignedHours rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#reportedHours
+:reportedHours rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
