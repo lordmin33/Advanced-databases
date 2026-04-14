@@ -12,20 +12,10 @@
 #    Object Properties
 #################################################################
 
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assignedHoursFor
-:assignedHoursFor rdf:type owl:ObjectProperty ;
-                  rdfs:subPropertyOf owl:topObjectProperty ;
-                  rdfs:domain :CourseInstance ;
-                  rdfs:range :assignedHours ,
-                             :reportedHours .
-
-
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#at
 :at rdf:type owl:ObjectProperty ;
     rdfs:subPropertyOf owl:topObjectProperty ;
-    rdfs:domain :Teacher ;
-    rdfs:range :assignedHours ,
-               :reportedHours .
+    rdfs:domain :Teacher .
 
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#directorOf
@@ -51,8 +41,11 @@
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#hasSupervisor
 :hasSupervisor rdf:type owl:ObjectProperty ;
-               rdfs:domain :Postgraduate ;
                rdfs:range :Teacher .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#hoursForCourse
+:hoursForCourse rdf:type owl:ObjectProperty .
 
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#instanceOf
@@ -90,6 +83,20 @@
                  rdfs:range :CourseInstance .
 
 
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teachingAssistant
+:teachingAssistant rdf:type owl:ObjectProperty ;
+                   rdfs:domain [ rdf:type owl:Restriction ;
+                                 owl:onProperty :teachingAssistant ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Student
+                               ] ;
+                   rdfs:range [ rdf:type owl:Restriction ;
+                                owl:onProperty :teachingAssistant ;
+                                owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                owl:onClass :Teacher
+                              ] .
+
+
 #################################################################
 #    Data properties
 #################################################################
@@ -107,6 +114,15 @@
                             owl:someValuesFrom :Program
                           ] ;
               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assignedHours
+:assignedHours rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hours ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty :hoursForCourse ;
+                             owl:someValuesFrom :Teacher
+                           ] .
 
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assistantHours
@@ -189,8 +205,6 @@
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#hours
 :hours rdf:type owl:DatatypeProperty ;
        rdfs:subPropertyOf owl:topDataProperty ;
-       rdfs:domain :assignedHours ,
-                   :reportedHours ;
        rdfs:range xsd:int .
 
 
@@ -246,6 +260,15 @@
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#projectName
 :projectName rdf:type owl:DatatypeProperty ;
              rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#reportedHours
+:reportedHours rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf :hours ;
+               rdfs:domain [ rdf:type owl:Restriction ;
+                             owl:onProperty :hoursForCourse ;
+                             owl:someValuesFrom :Teacher
+                           ] .
 
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#seniorHours
@@ -309,11 +332,6 @@
 :Person rdf:type owl:Class .
 
 
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Postgraduate
-:Postgraduate rdf:type owl:Class ;
-              rdfs:subClassOf :Student .
-
-
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Program
 :Program rdf:type owl:Class .
 
@@ -333,23 +351,15 @@
          rdfs:subClassOf :Person .
 
 
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#TeachingAssistant
-:TeachingAssistant rdf:type owl:Class ;
-                   rdfs:subClassOf :Student ,
-                                   :Teacher .
+#################################################################
+#    Individuals
+#################################################################
 
-
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Undergraduate
-:Undergraduate rdf:type owl:Class ;
-               rdfs:subClassOf :Student .
-
-
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#assignedHours
-:assignedHours rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#reportedHours
-:reportedHours rdf:type owl:Class .
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#Didrik
+:Didrik rdf:type owl:NamedIndividual ,
+                 :Student ;
+        :name "didrik" ;
+        :personalID 6213 .
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
