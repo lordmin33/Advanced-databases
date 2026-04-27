@@ -1,0 +1,182 @@
+@prefix : <http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#> .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19560612-0010> a :Teacher ;
+    :departmentName "D3" ;
+    :divisionName "D3-2" ;
+    :name "Teacher 10" ;
+    :personalID "19560612-0010" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19560705-0025> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-4" ;
+    :name "Teacher 25" ;
+    :personalID "19560705-0025" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19560812-0016> a :Teacher ;
+    :departmentName "D3" ;
+    :divisionName "D3-1" ;
+    :name "Teacher 16" ;
+    :personalID "19560812-0016" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19561222-0030> a :Teacher ;
+    :departmentName "D2" ;
+    :divisionName "D2-2" ;
+    :name "Teacher 30" ;
+    :personalID "19561222-0030" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19570615-0011> a :Teacher ;
+    :departmentName "D5" ;
+    :divisionName "D5-3" ;
+    :name "Teacher 11" ;
+    :personalID "19570615-0011" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19570826-0012> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-5" ;
+    :name "Teacher 12" ;
+    :personalID "19570826-0012" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19570828-0008> a :Teacher ;
+    :departmentName "D4" ;
+    :divisionName "D4-0" ;
+    :name "Teacher 8" ;
+    :personalID "19570828-0008" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19580218-0007> a :Teacher ;
+    :departmentName "D4" ;
+    :divisionName "D4-1" ;
+    :name "Teacher 7" ;
+    :personalID "19580218-0007" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19580515-0017> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-3" ;
+    :name "Teacher 17" ;
+    :personalID "19580515-0017" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19590129-0004> a :Teacher ;
+    :departmentName "D3" ;
+    :divisionName "D3-3" ;
+    :name "Teacher 4" ;
+    :personalID "19590129-0004" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19600529-0021> a :Teacher ;
+    :departmentName "D3" ;
+    :divisionName "D3-5" ;
+    :name "Teacher 21" ;
+    :personalID "19600529-0021" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19600814-0002> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-4" ;
+    :name "Teacher 2" ;
+    :personalID "19600814-0002" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19600905-0003> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-1" ;
+    :name "Teacher 3" ;
+    :personalID "19600905-0003" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19601021-0018> a :Teacher ;
+    :departmentName "D1" ;
+    :divisionName "D1-3" ;
+    :name "Teacher 18" ;
+    :personalID "19601021-0018" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19610620-0006> a :Teacher ;
+    :departmentName "D5" ;
+    :divisionName "D5-0" ;
+    :name "Teacher 6" ;
+    :personalID "19610620-0006" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19610623-0005> a :Teacher ;
+    :departmentName "D5" ;
+    :divisionName "D5-2" ;
+    :name "Teacher 5" ;
+    :personalID "19610623-0005" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19610918-0027> a :Teacher ;
+    :departmentName "D4" ;
+    :divisionName "D4-3" ;
+    :name "Teacher 27" ;
+    :personalID "19610918-0027" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19611219-0014> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-3" ;
+    :name "Teacher 14" ;
+    :personalID "19611219-0014" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19620424-0026> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-1" ;
+    :name "Teacher 26" ;
+    :personalID "19620424-0026" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19620522-0023> a :Teacher ;
+    :departmentName "D2" ;
+    :divisionName "D2-2" ;
+    :name "Teacher 23" ;
+    :personalID "19620522-0023" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19620831-0024> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-0" ;
+    :name "Teacher 24" ;
+    :personalID "19620831-0024" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19630126-0001> a :Teacher ;
+    :departmentName "D4" ;
+    :divisionName "D4-3" ;
+    :name "Teacher 1" ;
+    :personalID "19630126-0001" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19640220-0029> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-5" ;
+    :name "Teacher 29" ;
+    :personalID "19640220-0029" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19640414-0013> a :Teacher ;
+    :departmentName "D4" ;
+    :divisionName "D4-1" ;
+    :name "Teacher 13" ;
+    :personalID "19640414-0013" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19650303-0019> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-4" ;
+    :name "Teacher 19" ;
+    :personalID "19650303-0019" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19660630-0020> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-5" ;
+    :name "Teacher 20" ;
+    :personalID "19660630-0020" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19680712-0028> a :Teacher ;
+    :departmentName "D6" ;
+    :divisionName "D6-0" ;
+    :name "Teacher 28" ;
+    :personalID "19680712-0028" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19690408-0009> a :Teacher ;
+    :departmentName "D3" ;
+    :divisionName "D3-5" ;
+    :name "Teacher 9" ;
+    :personalID "19690408-0009" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19690513-0015> a :Teacher ;
+    :departmentName "D7" ;
+    :divisionName "D7-5" ;
+    :name "Teacher 15" ;
+    :personalID "19690513-0015" .
+
+<http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#teacher/19690917-0022> a :Teacher ;
+    :departmentName "D1" ;
+    :divisionName "D1-3" ;
+    :name "Teacher 22" ;
+    :personalID "19690917-0022" .
+
