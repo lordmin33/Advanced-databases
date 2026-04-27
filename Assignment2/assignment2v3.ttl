@@ -24,6 +24,12 @@
                        rdfs:range :ProgramCourse .
 
 
+###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#InstanceOf
+:InstanceOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :CourseInstance ;
+            rdfs:range :Course .
+
+
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#ProgramInProgramCourse
 :ProgramInProgramCourse rdf:type owl:ObjectProperty ;
                         rdfs:domain :Program ;
