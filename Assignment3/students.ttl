@@ -1,0 +1,2879 @@
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/person/19750102-0059> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 59" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2004 .
+
+<http://example.org/person/19750122-0056> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 56" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19750220-0037> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 37" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2008 .
+
+<http://example.org/person/19750331-0036> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 36" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2004 .
+
+<http://example.org/person/19750417-0051> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 51" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2000 .
+
+<http://example.org/person/19750512-0043> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 43" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19750705-0033> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 33" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19750722-0060> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 60" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2000 .
+
+<http://example.org/person/19750906-0032> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 32" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2000 .
+
+<http://example.org/person/19751018-0039> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 39" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2009 .
+
+<http://example.org/person/19760108-0050> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 50" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19760524-0046> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 46" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19761009-0055> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 55" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19761020-0044> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 44" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2008 .
+
+<http://example.org/person/19761024-0034> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 34" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2000 .
+
+<http://example.org/person/19770224-0058> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 58" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19770713-0042> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 42" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19771013-0040> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 40" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19780317-0052> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 52" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19780424-0057> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 57" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2003 .
+
+<http://example.org/person/19780602-0035> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 35" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2008 .
+
+<http://example.org/person/19780815-0047> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 47" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19781125-0031> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 31" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2005 .
+
+<http://example.org/person/19781130-0054> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 54" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19781217-0053> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 53" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2000 .
+
+<http://example.org/person/19790426-0049> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 49" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19790618-0048> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 48" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2002 .
+
+<http://example.org/person/19790702-0038> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 38" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19790708-0041> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 41" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19790717-0045> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated true ;
+    ex:hasName "TA 45" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19850124-0067> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 68" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19850205-0022> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 23" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19850206-0077> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 78" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19850305-0003> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 4" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19850426-0018> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 19" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19850504-0054> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 55" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19850522-0072> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 73" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19850527-0011> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 12" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19850603-0006> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 7" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19850704-0062> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 63" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19850709-0081> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 82" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19851109-0051> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 52" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19851112-0084> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 85" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19851126-0070> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 71" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19851213-0025> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 26" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19860118-0053> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 54" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19860119-0049> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 50" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19860125-0015> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 16" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19860128-0061> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 62" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19860208-0024> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 25" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19860211-0004> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 5" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19860222-0007> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 8" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19860309-0002> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 3" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19860321-0097> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 98" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19860330-0008> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 9" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19860412-0063> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 64" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19860516-0078> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 79" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19860729-0021> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 22" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19860829-0010> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 11" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19861011-0071> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 72" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19861015-0085> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 86" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19861017-0014> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 15" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19861018-0009> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 10" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19861115-0074> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 75" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19861117-0057> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 58" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19861216-0066> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 67" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19870128-0080> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 81" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19870209-0091> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 92" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19870215-0031> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 32" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19870304-0086> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 87" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19870304-0096> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 97" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19870308-0083> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 84" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19870406-0027> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 28" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19870412-0048> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 49" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870414-0044> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 45" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19870418-0095> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 96" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19870421-0042> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 43" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19870422-0037> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 38" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870427-0056> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 57" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870507-0082> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 83" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870512-0028> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 29" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870613-0013> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 14" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19870624-0026> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 27" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19870714-0017> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 18" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19870720-0041> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 42" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19870727-0069> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 70" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19870813-0088> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 89" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19870816-0019> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 20" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19870901-0087> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 88" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19870918-0064> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 65" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19870921-0092> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 93" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19871013-0089> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 90" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19871019-0098> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 99" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19871023-0038> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 39" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19871102-0016> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 17" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19871111-0073> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 74" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19871128-0099> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 100" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19880117-0001> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 2" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19880118-0068> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 69" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19880122-0005> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 6" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19880204-0045> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 46" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19880205-0030> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 31" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19880307-0065> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 66" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19880404-0020> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 21" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19880522-0050> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 51" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19880807-0046> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 47" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19880818-0043> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 44" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19881020-0039> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 40" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19881120-0090> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 91" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19881204-0033> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 34" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19881216-0040> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 41" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19890106-0094> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 95" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19890202-0093> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 94" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19890219-0047> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 48" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19890225-0029> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 30" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19890302-0055> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 56" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19890303-0075> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 76" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19890416-0034> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 35" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19890513-0032> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 33" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2011 .
+
+<http://example.org/person/19890611-0052> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 53" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19890622-0076> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 77" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19890705-0059> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 60" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2015 .
+
+<http://example.org/person/19890927-0036> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 37" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19891011-0035> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 36" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19891104-0079> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 80" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2012 .
+
+<http://example.org/person/19891109-0058> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 59" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2013 .
+
+<http://example.org/person/19891130-0023> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 24" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19891205-0000> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 1" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19891217-0012> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 13" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2014 .
+
+<http://example.org/person/19891221-0060> a ex:Person,
+        ex:Student ;
+    ex:graduated true ;
+    ex:hasName "Student 61" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2010 .
+
+<http://example.org/person/19900119-0104> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 104" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19900124-0064> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 64" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19900128-0095> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 95" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19900201-0074> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 74" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19900211-0140> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 140" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19900307-0105> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 105" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19900317-0083> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 83" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19900321-0080> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 80" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19900426-0089> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 89" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19900430-0112> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 112" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19900511-0134> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 134" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19900520-0063> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 63" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19900616-0124> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 124" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19900619-0076> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 76" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19900701-0113> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 113" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19900701-0138> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 138" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19900723-0126> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 126" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19900801-0130> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 130" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19900818-0116> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 116" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19900902-0090> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 90" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19900902-0114> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 114" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19900909-0123> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 123" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19901002-0085> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 85" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19901011-0119> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 119" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19901026-0111> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 111" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19901029-0071> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 71" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19901108-0087> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 87" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19901219-0125> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 125" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19910101-0133> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 133" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19910122-0077> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 77" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19910206-0081> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 81" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19910214-0084> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 84" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19910327-0096> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 96" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19910403-0103> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 103" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19910403-0131> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 131" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19910404-0102> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 102" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19910421-0067> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 67" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19910514-0068> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 68" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19910817-0092> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 92" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19910820-0078> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 78" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19910822-0122> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 122" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19910921-0136> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 136" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19910927-0128> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 128" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19911025-0091> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 91" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19911116-0069> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 69" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19920122-0065> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 65" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19920206-0072> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 72" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19920217-0098> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 98" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19920226-0075> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 75" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19920316-0107> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 107" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19920320-0121> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 121" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19920504-0093> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 93" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19920505-0115> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 115" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19920602-0073> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 73" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19920826-0088> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 88" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19920828-0070> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 70" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19920917-0109> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 109" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19921002-0129> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 129" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19921123-0108> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 108" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19921127-0120> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 120" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19921201-0094> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 94" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19921208-0097> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 97" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19921218-0101> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 101" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19930221-0139> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 139" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19930228-0086> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 86" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19930302-0135> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 135" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19930326-0132> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 132" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19930414-0106> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 106" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19930508-0061> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 61" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19930512-0117> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 117" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19930616-0127> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 127" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19930709-0100> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 100" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19930829-0082> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 82" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19930906-0110> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 110" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19930919-0137> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 137" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19931118-0062> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 62" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19931203-0066> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 66" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19931212-0079> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 79" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19931226-0118> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 118" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19931231-0099> a ex:Person,
+        ex:TeachingAssistant ;
+    ex:graduated false ;
+    ex:hasName "TA 99" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19950124-0070> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 71" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950212-0185> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 186" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950214-0124> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 125" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19950225-0128> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 129" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950225-0132> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 133" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950304-0007> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 8" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950308-0046> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 47" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950309-0074> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 75" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950316-0106> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 107" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950317-0140> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 141" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950319-0063> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 64" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950321-0080> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 81" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950331-0150> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 151" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950404-0079> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 80" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950427-0172> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 173" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950511-0111> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 112" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19950522-0058> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 59" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19950604-0143> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 144" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19950606-0009> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 10" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950703-0085> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 86" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950707-0183> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 184" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19950709-0123> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 124" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19950717-0016> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 17" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950801-0037> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 38" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950817-0125> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 126" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19950818-0148> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 149" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19950821-0102> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 103" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950824-0044> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 45" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950829-0060> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 61" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950831-0179> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 180" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950907-0084> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 85" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19950912-0181> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 182" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19950913-0176> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 177" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950924-0115> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 116" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19950925-0171> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 172" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19951001-0193> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 194" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19951006-0053> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 54" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19951026-0010> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 11" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19951121-0068> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 69" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19951123-0027> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 28" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19951130-0139> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 140" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19951130-0159> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 160" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19960101-0101> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 102" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960118-0040> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 41" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19960118-0110> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 111" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960123-0104> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 105" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960213-0001> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 2" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960216-0175> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 176" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19960220-0029> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 30" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960221-0168> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 169" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19960222-0038> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 39" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960224-0178> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 179" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960227-0093> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 94" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960307-0032> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 33" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19960315-0065> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 66" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960328-0002> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 3" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960406-0142> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 143" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19960414-0078> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 79" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960523-0164> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 165" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960607-0151> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 152" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960609-0090> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 91" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19960610-0035> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 36" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960621-0099> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 100" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960701-0028> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 29" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960704-0098> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 99" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19960809-0134> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 135" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19960818-0108> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 109" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960822-0033> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 34" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960828-0039> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 40" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19960829-0120> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 121" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960901-0160> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 161" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960911-0117> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 118" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19960912-0161> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 162" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19960924-0067> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 68" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19960928-0062> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 63" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19961005-0133> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 134" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19961009-0180> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 181" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19961012-0034> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 35" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19961018-0031> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 32" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19961023-0076> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 77" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19961024-0152> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 153" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19961108-0119> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 120" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19961117-0113> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 114" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19961122-0057> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 58" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19961124-0086> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 87" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19961220-0045> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 46" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19961222-0153> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 154" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19970109-0015> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 16" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970112-0116> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 117" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970117-0131> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 132" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970118-0173> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 174" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970121-0197> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 198" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970301-0048> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 49" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19970308-0000> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 1" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19970309-0064> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 65" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970318-0014> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 15" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970318-0170> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 171" ;
+    ex:hasProgramme "10031" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970404-0169> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 170" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970408-0095> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 96" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19970413-0004> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 5" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19970416-0196> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 197" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19970422-0127> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 128" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19970428-0081> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 82" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970510-0158> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 159" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970524-0166> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 167" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19970601-0188> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 189" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970609-0026> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 27" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970619-0146> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 147" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19970630-0105> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 106" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970711-0059> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 60" ;
+    ex:hasProgramme "10034" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970721-0052> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 53" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19970721-0088> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 89" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19970727-0012> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 13" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970805-0109> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 110" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970806-0103> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 104" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19970820-0083> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 84" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19970822-0177> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 178" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970904-0089> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 90" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19970907-0186> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 187" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19970918-0050> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 51" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19970925-0118> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 119" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19971007-0018> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 19" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19971008-0055> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 56" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19971106-0162> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 163" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19971113-0144> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 145" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19971122-0021> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 22" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980102-0049> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 50" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980203-0100> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 101" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980203-0137> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 138" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980206-0041> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 42" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980212-0024> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 25" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980219-0187> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 188" ;
+    ex:hasProgramme "10014" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19980221-0061> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 62" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980329-0155> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 156" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19980410-0129> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 130" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980414-0022> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 23" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980418-0082> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 83" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980421-0141> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 142" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980425-0066> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 67" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19980524-0056> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 57" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19980609-0023> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 24" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980617-0130> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 131" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980617-0190> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 191" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19980628-0184> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 185" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980709-0157> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 158" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19980712-0165> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 166" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980719-0069> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 70" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19980720-0138> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 139" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19980804-0149> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 150" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980805-0087> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 88" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980824-0195> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 196" ;
+    ex:hasProgramme "10011" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19980905-0003> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 4" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980906-0194> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 195" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980920-0147> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 148" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19980925-0092> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 93" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19980926-0182> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 183" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980928-0145> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 146" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19980928-0189> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 190" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19981018-0198> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 199" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19981023-0043> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 44" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19981204-0077> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 78" ;
+    ex:hasProgramme "10001" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19981214-0051> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 52" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19981221-0114> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 115" ;
+    ex:hasProgramme "10013" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19981226-0107> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 108" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990116-0156> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 157" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990124-0019> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 20" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990211-0030> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 31" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19990219-0013> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 14" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990226-0154> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 155" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990301-0071> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 72" ;
+    ex:hasProgramme "10042" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19990302-0036> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 37" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990305-0011> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 12" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990307-0167> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 168" ;
+    ex:hasProgramme "10032" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19990313-0072> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 73" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19990317-0121> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 122" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19990323-0199> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 200" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990405-0126> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 127" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990427-0096> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 97" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19990518-0097> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 98" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19990518-0163> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 164" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990521-0122> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 123" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990530-0112> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 113" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19990531-0094> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 95" ;
+    ex:hasProgramme "10054" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990624-0192> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 193" ;
+    ex:hasProgramme "10052" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19990626-0006> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 7" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990626-0136> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 137" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19990702-0073> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 74" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19990705-0017> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 18" ;
+    ex:hasProgramme "10053" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19990708-0174> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 175" ;
+    ex:hasProgramme "10072" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990709-0191> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 192" ;
+    ex:hasProgramme "10041" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990711-0075> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 76" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2020 .
+
+<http://example.org/person/19990713-0135> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 136" ;
+    ex:hasProgramme "10012" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19990720-0054> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 55" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19990805-0025> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 26" ;
+    ex:hasProgramme "10051" ;
+    ex:hasYear 2017 .
+
+<http://example.org/person/19990816-0005> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 6" ;
+    ex:hasProgramme "10021" ;
+    ex:hasYear 2021 .
+
+<http://example.org/person/19990824-0047> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 48" ;
+    ex:hasProgramme "10071" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19990831-0020> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 21" ;
+    ex:hasProgramme "10061" ;
+    ex:hasYear 2016 .
+
+<http://example.org/person/19990918-0091> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 92" ;
+    ex:hasProgramme "10073" ;
+    ex:hasYear 2019 .
+
+<http://example.org/person/19991025-0008> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 9" ;
+    ex:hasProgramme "10033" ;
+    ex:hasYear 2018 .
+
+<http://example.org/person/19991130-0042> a ex:Person,
+        ex:Student ;
+    ex:graduated false ;
+    ex:hasName "Student 43" ;
+    ex:hasProgramme "10074" ;
+    ex:hasYear 2018 .
+
+ex:TeachingAssistant a ex:Class .
+
+ex:Student a ex:Class .
+
+ex:Person a ex:Class .
+
