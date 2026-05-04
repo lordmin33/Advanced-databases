@@ -1,20 +1,21 @@
 import pandas as pd
 from rdflib import Graph, Namespace, Literal, RDF, XSD, URIRef
 
-# -----------------------------
-# Namespace (your ontology)
-# -----------------------------
+# =========================================================
+# NAMESPACE
+# =========================================================
 BASE = "http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#"
 ns = Namespace(BASE)
 
 g = Graph()
 g.bind("", ns)
 
-# -----------------------------
-# Helper for URIs
-# -----------------------------
+# =========================================================
+# HELPER
+# =========================================================
 def uri(cls, id):
     return URIRef(BASE + f"{cls}/{id}")
+
 
 # =========================================================
 # 1. STUDENTS
@@ -23,14 +24,14 @@ students = pd.read_csv("Students.csv")
 
 for _, row in students.iterrows():
     s = uri("student", row["Student id"])
+    p = uri("program", row["Programme"])
 
     g.add((s, RDF.type, ns.Student))
     g.add((s, ns.name, Literal(row["Student name"])))
     g.add((s, ns.personalID, Literal(row["Student id"])))
     g.add((s, ns.enrolledYear, Literal(int(row["Year"]))))
 
-    prog = uri("program", row["Programme"])
-    g.add((s, ns.enrolledInProgram, prog))
+    g.add((s, ns.enrolledInProgram, p))
 
 
 # =========================================================
@@ -39,6 +40,8 @@ for _, row in students.iterrows():
 def add_teacher(df, is_senior=False):
     for _, row in df.iterrows():
         t = uri("teacher", row["Teacher id"])
+        dept = uri("department", row["Department name"])
+        div = uri("division", row["Division name"])
 
         g.add((t, RDF.type, ns.Teacher))
 
@@ -47,8 +50,16 @@ def add_teacher(df, is_senior=False):
 
         g.add((t, ns.name, Literal(row["Teacher name"])))
         g.add((t, ns.personalID, Literal(row["Teacher id"])))
-        g.add((t, ns.departmentName, Literal(row["Department name"])))
-        g.add((t, ns.divisionName, Literal(row["Division name"])))
+
+        # Department & Division as resources
+        g.add((dept, RDF.type, ns.Department))
+        g.add((dept, ns.departmentName, Literal(row["Department name"])))
+
+        g.add((div, RDF.type, ns.Division))
+        g.add((div, ns.divisionName, Literal(row["Division name"])))
+
+        g.add((t, ns.empolyedAt, div))
+
 
 teachers = pd.read_csv("Senior_Teachers.csv")
 tas = pd.read_csv("Teaching_Assistants.csv")
@@ -69,8 +80,11 @@ for _, row in programs.iterrows():
     g.add((p, RDF.type, ns.Program))
     g.add((p, ns.programCode, Literal(row["Programme code"])))
     g.add((p, ns.programName, Literal(row["Programme name"])))
-    g.add((p, ns.directorOf, d))
     g.add((p, ns.departmentName, Literal(row["Department name"])))
+
+    # FIXED: directorOf domain = SeniorTeacher → Program
+    g.add((d, RDF.type, ns.SeniorTeacher))
+    g.add((d, ns.directorOf, p))
 
 
 # =========================================================
@@ -80,14 +94,17 @@ courses = pd.read_csv("Courses.csv")
 
 for _, row in courses.iterrows():
     c = uri("course", row["Course code"])
+    div = uri("division", row["Division"])
+    prog = uri("program", row["Owned By"])
 
     g.add((c, RDF.type, ns.Course))
     g.add((c, ns.courseCode, Literal(row["Course code"])))
     g.add((c, ns.courseName, Literal(row["Course name"])))
     g.add((c, ns.credits, Literal(float(row["Credits"]))))
     g.add((c, ns.level, Literal(row["Level"])))
-    g.add((c, ns.departmentName, Literal(row["Department"])))
-    g.add((c, ns.divisionName, Literal(row["Division"])))
+
+    g.add((c, ns.ArrangedBy, div))
+    g.add((c, ns.ownedBy, prog))
 
 
 # =========================================================
@@ -102,8 +119,13 @@ for _, row in instances.iterrows():
 
     g.add((i, RDF.type, ns.CourseInstance))
     g.add((i, ns.instanceID, Literal(row["Instance_id"])))
+    g.add((i, ns.studyPeriod, Literal(float(row["Study period"]))))
+    g.add((i, ns.academicYear, Literal(row["Academic year"])))
+
     g.add((i, ns.InstanceOf, c))
 
+    # FIX: examiner must be SeniorTeacher
+    g.add((examiner, RDF.type, ns.SeniorTeacher))
     g.add((examiner, ns.examinerOf, i))
 
 
@@ -134,8 +156,8 @@ for _, row in planning.iterrows():
     i = uri("instance", row["Course"])
 
     g.add((i, ns.planningNumStudents, Literal(int(row["Planned number of Students"]))))
-    g.add((i, ns.seniorHours, Literal(int(row["Senior Hours"]))))
-    g.add((i, ns.assistantHours, Literal(int(row["Assistant Hours"]))))
+    g.add((i, ns.seniorHours, Literal(float(row["Senior Hours"]))))
+    g.add((i, ns.assistantHours, Literal(float(row["Assistant Hours"]))))
 
 
 # =========================================================
@@ -150,7 +172,7 @@ for _, row in regs.iterrows():
 
     g.add((r, RDF.type, ns.CourseRegistration))
     g.add((r, ns.status, Literal(row["Status"])))
-    g.add((r, ns.grade, Literal(float(row["Grade"]))))
+    g.add((r, ns.grade, Literal(float(row["Grade"]), datatype=XSD.float)))
 
     g.add((s, ns.RegisteredStudent, r))
     g.add((r, ns.RegisteredForCourse, i))
@@ -161,4 +183,4 @@ for _, row in regs.iterrows():
 # =========================================================
 g.serialize("output.ttl", format="turtle")
 
-print("✅ RDF generation complete: output.ttl")
+print("RDF generation complete: output.ttl")
