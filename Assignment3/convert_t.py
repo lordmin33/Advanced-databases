@@ -86,7 +86,6 @@ for _, row in programs.iterrows():
     g.add((d, RDF.type, ns.SeniorTeacher))
     g.add((d, ns.directorOf, p))
 
-
 # =========================================================
 # 4. COURSES
 # =========================================================
@@ -106,6 +105,29 @@ for _, row in courses.iterrows():
     g.add((c, ns.ArrangedBy, div))
     g.add((c, ns.ownedBy, prog))
 
+# =========================================================
+# PROGRAMME COURSES (Bridge table)
+# =========================================================
+prog_courses = pd.read_csv("Programme_Courses.csv")
+
+for _, row in prog_courses.iterrows():
+    # Create a ProgramCourse instance (bridge between Program and Course)
+    pc_id = f"{row['Programme code']}_{row['Course']}_{row['Academic Year']}"
+    pc = uri("programCourse", pc_id)
+    
+    prog = uri("program", row["Programme code"])
+    course = uri("course", row["Course"])
+    
+    g.add((pc, RDF.type, ns.ProgramCourse))
+    g.add((pc, ns.studyYear, Literal(float(row["Study Year"]))))
+    g.add((pc, ns.academicYear, Literal(row["Academic Year"])))
+    g.add((pc, ns.courseType, Literal(row["Course Type"])))
+    
+    # Link Program to ProgramCourse
+    g.add((prog, ns.ProgramInProgramCourse, pc))
+    
+    # Link Course to ProgramCourse
+    g.add((course, ns.CourseInProgramCourse, pc))
 
 # =========================================================
 # 5. COURSE INSTANCES
@@ -146,6 +168,26 @@ for _, row in assigned.iterrows():
     g.add((t, ns.TeacherHours, th))
     g.add((th, ns.TeacherCourseHours, i))
 
+# =========================================================
+# 9. REPORTED HOURS (ADD THIS!)
+# =========================================================
+reported = pd.read_csv("Reported_Hours.csv")
+
+for _, row in reported.iterrows():
+    t = uri("teacher", row["Teacher Id"])
+    i = uri("instance", row["Course code"])  # Note: Course code here is actually Instance_id
+    
+    # Create a unique URI for this reported hours entry
+    th = uri("reportedHours", f"{row['Teacher Id']}_{row['Course code']}")
+    
+    g.add((th, RDF.type, ns.TeachingHours))
+    g.add((th, ns.reportedHours, Literal(float(row["Hours"]))))
+    
+    # Link teacher to these teaching hours
+    g.add((t, ns.TeacherHours, th))
+    
+    # Link teaching hours to course instance
+    g.add((th, ns.TeacherCourseHours, i))
 
 # =========================================================
 # 7. COURSE PLANNING
@@ -176,7 +218,6 @@ for _, row in regs.iterrows():
 
     g.add((s, ns.RegisteredStudent, r))
     g.add((r, ns.RegisteredForCourse, i))
-
 
 # =========================================================
 # SAVE RDF
