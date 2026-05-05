@@ -25,13 +25,18 @@ students = pd.read_csv("Students.csv")
 for _, row in students.iterrows():
     s = uri("student", row["Student id"])
     p = uri("program", row["Programme"])
+    r = uri("enrollment", f"{row['Programme']}_{row['Student id']}")
 
     g.add((s, RDF.type, ns.Student))
     g.add((s, ns.name, Literal(row["Student name"])))
     g.add((s, ns.personalID, Literal(row["Student id"])))
-    g.add((s, ns.enrolledYear, Literal(int(row["Year"]))))
 
-    g.add((s, ns.enrolledInProgram, p))
+    g.add((r, RDF.type, ns.Enrollment))
+    g.add((r, ns.enrolledYear, Literal(int(row["Year"]))))
+    g.add((r, ns.graduated, Literal(bool(row["Graduated"]))))
+
+    g.add((r, ns.enrolledInProgram, p))
+    g.add((s, ns.enrolledStudent, r))
 
 
 # =========================================================
@@ -51,7 +56,6 @@ def add_teacher(df, is_senior=False):
         g.add((t, ns.name, Literal(row["Teacher name"])))
         g.add((t, ns.personalID, Literal(row["Teacher id"])))
 
-        # Department & Division as resources
         g.add((dept, RDF.type, ns.Department))
         g.add((dept, ns.departmentName, Literal(row["Department name"])))
 
@@ -82,7 +86,6 @@ for _, row in programs.iterrows():
     g.add((p, ns.programName, Literal(row["Programme name"])))
     g.add((p, ns.departmentName, Literal(row["Department name"])))
 
-    # FIXED: directorOf domain = SeniorTeacher → Program
     g.add((d, RDF.type, ns.SeniorTeacher))
     g.add((d, ns.directorOf, p))
 
@@ -123,10 +126,7 @@ for _, row in prog_courses.iterrows():
     g.add((pc, ns.academicYear, Literal(row["Academic Year"])))
     g.add((pc, ns.courseType, Literal(row["Course Type"])))
     
-    # Link Program to ProgramCourse
     g.add((prog, ns.ProgramInProgramCourse, pc))
-    
-    # Link Course to ProgramCourse
     g.add((course, ns.CourseInProgramCourse, pc))
 
 # =========================================================
@@ -146,7 +146,6 @@ for _, row in instances.iterrows():
 
     g.add((i, ns.InstanceOf, c))
 
-    # FIX: examiner must be SeniorTeacher
     g.add((examiner, RDF.type, ns.SeniorTeacher))
     g.add((examiner, ns.examinerOf, i))
 
@@ -169,24 +168,20 @@ for _, row in assigned.iterrows():
     g.add((th, ns.TeacherCourseHours, i))
 
 # =========================================================
-# 9. REPORTED HOURS (ADD THIS!)
+# 9. REPORTED HOURS
 # =========================================================
 reported = pd.read_csv("Reported_Hours.csv")
 
 for _, row in reported.iterrows():
     t = uri("teacher", row["Teacher Id"])
-    i = uri("instance", row["Course code"])  # Note: Course code here is actually Instance_id
+    i = uri("instance", row["Course code"])
     
-    # Create a unique URI for this reported hours entry
     th = uri("reportedHours", f"{row['Teacher Id']}_{row['Course code']}")
     
     g.add((th, RDF.type, ns.TeachingHours))
     g.add((th, ns.reportedHours, Literal(float(row["Hours"]))))
     
-    # Link teacher to these teaching hours
     g.add((t, ns.TeacherHours, th))
-    
-    # Link teaching hours to course instance
     g.add((th, ns.TeacherCourseHours, i))
 
 # =========================================================
