@@ -98,7 +98,13 @@ courses = pd.read_csv("Courses.csv")
 for _, row in courses.iterrows():
     c = uri("course", row["Course code"])
     div = uri("division", row["Division"])
-    prog = uri("program", row["Owned By"])
+
+    # Convert P-52 -> 10052
+    owned_by_raw = row["Owned By"]          # e.g. "P-52"
+    program_num = owned_by_raw.replace("P-", "")
+    program_code = f"100{int(program_num):02d}"
+    prog = uri("program", program_code)
+
     dept = uri("department", row["Department"])
 
     g.add((c, RDF.type, ns.Course))
