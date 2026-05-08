@@ -174,7 +174,7 @@ for _, row in assigned.iterrows():
     g.add((th, ns.assignedHours, Literal(float(row["Hours"]))))
 
     g.add((t, ns.TeacherHours, th))
-    g.add((th, ns.TeacherCourseHours, i))
+    g.add((i, ns.TeacherCourseHours, th))
 
 # =========================================================
 # 9. REPORTED HOURS
@@ -185,13 +185,13 @@ for _, row in reported.iterrows():
     t = uri("teacher", row["Teacher Id"])
     i = uri("instance", row["Course code"])
     
-    th = uri("reportedHours", f"{row['Teacher Id']}_{row['Course code']}")
+    th = uri("teachingHours", f"{row['Teacher Id']}_{row['Course code']}")
     
     g.add((th, RDF.type, ns.TeachingHours))
     g.add((th, ns.reportedHours, Literal(float(row["Hours"]))))
     
     g.add((t, ns.TeacherHours, th))
-    g.add((th, ns.TeacherCourseHours, i))
+    g.add((i, ns.TeacherCourseHours, th))
 
 # =========================================================
 # 7. COURSE PLANNING
