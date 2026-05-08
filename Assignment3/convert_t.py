@@ -63,6 +63,7 @@ def add_teacher(df, is_senior=False):
         g.add((div, ns.divisionName, Literal(row["Division name"])))
 
         g.add((t, ns.empolyedAt, div))
+        g.add((div, ns.divisionOfDepartment, dept))
 
 
 teachers = pd.read_csv("Senior_Teachers.csv")
@@ -98,6 +99,7 @@ for _, row in courses.iterrows():
     c = uri("course", row["Course code"])
     div = uri("division", row["Division"])
     prog = uri("program", row["Owned By"])
+    dept = uri("department", row["Department"])
 
     g.add((c, RDF.type, ns.Course))
     g.add((c, ns.courseCode, Literal(row["Course code"])))
@@ -107,6 +109,7 @@ for _, row in courses.iterrows():
 
     g.add((c, ns.ArrangedBy, div))
     g.add((c, ns.ownedBy, prog))
+    g.add((div, ns.divisionOfDepartment, dept))
 
 # =========================================================
 # PROGRAMME COURSES (Bridge table)
