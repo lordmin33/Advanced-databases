@@ -26,6 +26,7 @@ for _, row in students.iterrows():
     s = uri("student", row["Student id"])
     p = uri("program", row["Programme"])
     r = uri("enrollment", f"{row['Programme']}_{row['Student id']}")
+    person = uri("person", row["Student id"])
 
     g.add((s, RDF.type, ns.Student))
     g.add((s, ns.name, Literal(row["Student name"])))
@@ -38,6 +39,9 @@ for _, row in students.iterrows():
     g.add((r, ns.enrolledInProgram, p))
     g.add((s, ns.enrolledStudent, r))
 
+    g.add((person, RDF.type, ns.Person))
+    g.add((person, ns.name, Literal(row["Student name"])))
+    g.add((person, ns.personalID, Literal(row["Student id"])))
 
 # =========================================================
 # 2. TEACHERS (Senior + TA)
@@ -47,6 +51,7 @@ def add_teacher(df, is_senior=False):
         t = uri("teacher", row["Teacher id"])
         dept = uri("department", row["Department name"])
         div = uri("division", row["Division name"])
+        person = uri("person", row["Teacher id"])
 
         g.add((t, RDF.type, ns.Teacher))
 
@@ -65,6 +70,9 @@ def add_teacher(df, is_senior=False):
         g.add((t, ns.empolyedAt, div))
         g.add((div, ns.divisionOfDepartment, dept))
 
+        g.add((person, RDF.type, ns.Person))
+        g.add((person, ns.name, Literal(row["Teacher name"])))
+        g.add((person, ns.personalID, Literal(row["Teacher id"])))
 
 teachers = pd.read_csv("Senior_Teachers.csv")
 tas = pd.read_csv("Teaching_Assistants.csv")
@@ -81,6 +89,7 @@ programs = pd.read_csv("Programmes.csv")
 for _, row in programs.iterrows():
     p = uri("program", row["Programme code"])
     d = uri("teacher", row["Director"])
+    dept = uri("department", row["Department name"])
 
     g.add((p, RDF.type, ns.Program))
     g.add((p, ns.programCode, Literal(row["Programme code"])))
@@ -89,6 +98,7 @@ for _, row in programs.iterrows():
 
     g.add((d, RDF.type, ns.SeniorTeacher))
     g.add((d, ns.directorOf, p))
+    g.add((p, ns.givenBy, dept))
 
 # =========================================================
 # 4. COURSES
@@ -150,7 +160,7 @@ for _, row in instances.iterrows():
 
     g.add((i, RDF.type, ns.CourseInstance))
     g.add((i, ns.instanceID, Literal(row["Instance_id"])))
-    g.add((i, ns.studyPeriod, Literal(float(row["Study period"]))))
+    g.add((i, ns.studyPeriod, Literal(str(row["Study period"]))))
     g.add((i, ns.academicYear, Literal(row["Academic year"])))
 
     g.add((i, ns.InstanceOf, c))
@@ -171,7 +181,7 @@ for _, row in assigned.iterrows():
     th = uri("teachingHours", f"{row['Teacher Id']}_{row['Course Instance']}")
 
     g.add((th, RDF.type, ns.TeachingHours))
-    g.add((th, ns.assignedHours, Literal(float(row["Hours"]))))
+    g.add((th, ns.assignedHours, Literal((row["Hours"]))))
 
     g.add((t, ns.TeacherHours, th))
     g.add((i, ns.TeacherCourseHours, th))
@@ -188,7 +198,7 @@ for _, row in reported.iterrows():
     th = uri("teachingHours", f"{row['Teacher Id']}_{row['Course code']}")
     
     g.add((th, RDF.type, ns.TeachingHours))
-    g.add((th, ns.reportedHours, Literal(float(row["Hours"]))))
+    g.add((th, ns.reportedHours, Literal((row["Hours"]))))
     
     g.add((t, ns.TeacherHours, th))
     g.add((i, ns.TeacherCourseHours, th))

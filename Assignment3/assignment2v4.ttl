@@ -50,8 +50,8 @@
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#TeacherCourseHours
 :TeacherCourseHours rdf:type owl:ObjectProperty ;
-                    rdfs:domain :TeachingHours ;
-                    rdfs:range :CourseInstance .
+                    rdfs:domain :CourseInstance ;
+                    rdfs:range :TeachingHours .
 
 
 ###  http://www.semanticweb.org/kemp/ontologies/2019/3/untitled-ontology-1#TeacherHours
