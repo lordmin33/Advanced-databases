@@ -1,6 +1,10 @@
 import pandas as pd
 from rdflib import Graph, Namespace, Literal, RDF, XSD, URIRef
 
+#Assignment 3 - GraphDB
+#By Albin Karlsteen and Didrik Nilsson, Group 16
+
+
 # =========================================================
 # NAMESPACE
 # =========================================================
