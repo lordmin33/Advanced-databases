@@ -1,0 +1,159 @@
+name,description,query,id,parentId,isFolder
+Imports,,,0,,true
+Clear,,"MATCH (n)
+DETACH DELETE n;",1,0,false
+AssignedHours,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Assigned_Hours.csv'
+AS row
+
+CREATE (:AssignedHours {
+  courseCode: row[""Course code""],
+  studyPeriod: row[""Study Period""],
+  academicYear: row[""Academic Year""],
+  teacherId: row[""Teacher Id""],
+  hours: toFloat(row[""Hours""]),
+  courseInstance: row[""Course Instance""]
+});",2,0,false
+Courses,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Courses.csv'
+AS row
+
+CREATE (:Course {
+  courseName: row[""Course name""],
+  courseCode: row[""Course code""],
+  credits: toFloat(row[""Credits""]),
+  level: row[""Level""],
+  department: row[""Department""],
+  division: row[""Division""],
+  ownedBy: row[""Owned By""]
+});",3,0,false
+CourseInstances,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Course_Instances.csv'
+AS row
+
+CREATE (:CourseInstance {
+  courseCode: row[""Course code""],
+  studyPeriod: toFloat(row[""Study period""]),
+  academicYear: row[""Academic year""],
+  instanceId: row[""Instance_id""],
+  examiner: row[""Examiner""]
+});",4,0,false
+CoursePlannings,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Course_plannings.csv'
+AS row
+
+CREATE (:CoursePlanning {
+  course: row[""Course""],
+  plannedStudents: toInteger(row[""Planned number of Students""]),
+  seniorHours: toFloat(row[""Senior Hours""]),
+  assistantHours: toFloat(row[""Assistant Hours""])
+});",5,0,false
+ProgramCourses,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Programme_Courses.csv'
+AS row
+
+CREATE (:ProgrammeCourse {
+  programmeCode: row[""Programme code""],
+  studyYear: toInteger(row[""Study Year""]),
+  academicYear: row[""Academic Year""],
+  course: row[""Course""],
+  courseType: row[""Course Type""]
+});",6,0,false
+Programs,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Programmes.csv'
+AS row
+
+CREATE (:Programme {
+  programmeName: row[""Programme name""],
+  programmeCode: row[""Programme code""],
+  departmentName: row[""Department name""],
+  director: row[""Director""]
+});",7,0,false
+Registrations,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Registrations.csv'
+AS row
+
+CREATE (:Registration {
+  courseInstance: row[""Course Instance""],
+  studentId: row[""Student id""],
+  status: row[""Status""],
+  grade: toFloat(row[""Grade""])
+});",8,0,false
+ReportedHours,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Reported_Hours.csv'
+AS row
+
+CREATE (:ReportedHours {
+  courseCode: row[""Course code""],
+  teacherId: row[""Teacher Id""],
+  hours: toFloat(row[""Hours""])
+});",9,0,false
+SeniorTeachers,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Senior_Teachers.csv'
+AS row
+
+CREATE (:SeniorTeacher {
+  teacherName: row[""Teacher name""],
+  teacherId: row[""Teacher id""],
+  departmentName: row[""Department name""],
+  divisionName: row[""Division name""]
+});",10,0,false
+Students,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Students.csv'
+AS row
+
+CREATE (:Student {
+  studentName: row[""Student name""],
+  studentId: row[""Student id""],
+  programme: row[""Programme""],
+  year: toInteger(row[""Year""]),
+  graduated: row[""Graduated""] = 'True'
+});",11,0,false
+TeachingAssistants,,"LOAD CSV WITH HEADERS
+FROM 'https://raw.githubusercontent.com/lordmin33/Advanced-databases/refs/heads/main/Assignment3/Teaching_Assistants.csv'
+AS row
+
+CREATE (:TeachingAssistant {
+  teacherName: row[""Teacher name""],
+  teacherId: row[""Teacher id""],
+  departmentName: row[""Department name""],
+  divisionName: row[""Division name""]
+});",12,0,false
+Queries,,,13,,true
+Query 6,,"MATCH (s:SeniorTeacher)
+WITH count(s) AS seniorTeacherCount
+
+MATCH (p)
+WHERE p:SeniorTeacher OR p:Student
+RETURN seniorTeacherCount, count(p) AS allPeopleCount",14,13,false
+Query 1,,"MATCH (p :Programme)
+RETURN p.programmeName AS programName, p.director AS director, p.departmentName AS departmentName",15,13,false
+Query 2,,"MATCH (ta :TeachingAssistant {divisionName:'D3-2'})
+WITH ta.divisionName AS divisionName, ta.teacherName AS name
+MATCH (c :Course {division: divisionName})
+WITH c.courseCode AS code, name
+MATCH (ci :CourseInstance {courseCode: code, studyPeriod: 2, academicYear: '2023-2024'})
+RETURN name, count(*) AS nrOfCourses
+",16,13,false
+Query 3,,"MATCH (ah :AssignedHours {courseCode: '1015'})
+FILTER ah.hours > 120
+WITH ah.courseInstance AS instance, ah.teacherId AS teacher
+MATCH (c :CourseInstance {instanceId: instance, studyPeriod: 1, academicYear: ""2018-2019""})
+WITH teacher
+CALL () {
+  MATCH (st :SeniorTeacher)
+  RETURN st.teacherName AS name, st.teacherId AS id
+UNION
+  MATCH (ta :TeachingAssistant)
+  RETURN ta.teacherName AS name, ta.teacherId AS id
+}
+FILTER teacher = id
+RETURN name",17,13,false
+Query 4,,"MATCH (r :Registration {courseInstance: 'I-910'})
+FILTER r.courseInstance <> 'I-911'
+RETURN r.studentId AS studentID, r.courseInstance AS instanceID",18,13,false
+Query 5,,"MATCH (c :Course)
+WITH c.ownedBy AS program
+MATCH (p :Programme {programmeName: program})
+RETURN p.programmeName AS program, count(*) AS courseCount
+ORDER BY courseCount DESC",19,13,false
